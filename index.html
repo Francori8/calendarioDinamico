@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Calendario Interactivo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Calendario Interactivo Universitario</h1>
+  </header>
+  <main>
+  
+    <section id="datos">
+        <div id="botones">
+          <button class="btn btn-materia" id="btn-materia">Agregar Materia</button>
+          <button class="btn btn-horario" id="btn-horario">Agregar Horario</button>
+        </div>
+        <div id="ingreso" class="ingreso">
+     
+        </div>
+        
+    </section>
+ 
+  
+    <section id="content-program">
+      <aside id="content-information">
+        
+      </aside>
+      <section id="content-calendar">
+          <div id="info-calendar">
+            <fieldset>
+            <legend>Intervalo de tiempo </legend>
+            <select name="interval" id="interval">
+              <option value="60" >1 hour</option>
+              <option value="30">30 min</option>
+              <option value="15">15 min</option>
+            </select>
+           </fieldset>
+           <fieldset>
+            <legend>Inicio de tiempo</legend>
+              <input type="time" name="init-hours" id="init-hours" value="08:00" >
+          </fieldset>
+          <fieldset>
+            <legend>Final de tiempo</legend>
+              <input type="time" name="finish-hours" id="finish-hours" value="23:00" >
+          </fieldset>
+          
+          </div>
+          <div id="calendar">
+            
+          </div>
+      </section>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+<script src="scripts.js"></script>
+</body>
+</html>

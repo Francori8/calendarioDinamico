@@ -1,0 +1,85 @@
+:root{
+  --colorPrimary: #fd9999;
+  --colorSecundary: #a4e7ff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 5px 5px;
+  background-color: var(--colorPrimary);
+}
+
+.title{
+  color: var(--colorSecundary);
+  font-weight: 900;
+  text-align: center;
+}
+
+input, .btn, select{
+  background-color: var(--colorPrimary);
+  cursor: pointer;
+  
+}
+
+fieldset{
+  width: 18%;
+  text-align: center;
+  padding: 5px 5px 10px 5px;
+  border-color: var(--colorSecundary);
+
+}
+
+#content-program{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+#content-information{
+  margin-top: 2px;
+  width: 30%;
+  border: 1px dashed black;
+}
+#content-calendar{
+  width: 65%;
+}
+
+#info-calendar{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#calendar{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  border: 1px solid black;
+  background-color:white;
+}
+
+.firstColumn, .firstRow{
+  text-align: center;
+  background-color: var(--colorSecundary);
+}
+
+.firstRow{
+  padding: 1px 10px 1px 10px;
+ 
+}
+.firstColumn{
+  padding: 2px 0px;
+}
+
+.divCalendar{
+   border: 1px solid black;
+}
+
+.ingreso{
+  display: none;
+}
