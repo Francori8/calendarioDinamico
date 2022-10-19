@@ -14,15 +14,22 @@ body{
   background-color: var(--colorPrimary);
 }
 
+section{
+  margin: 10px 0;
+}
+
 .title{
   color: var(--colorSecundary);
-  font-weight: 900;
+  font-weight: bold;
   text-align: center;
+  font-size: 3em;
+
 }
 
 input, .btn, select{
   background-color: var(--colorPrimary);
   cursor: pointer;
+  margin-right: 5px;
   
 }
 
@@ -38,7 +45,7 @@ fieldset{
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 10px;
 }
 #content-information{
   margin-top: 2px;
@@ -82,4 +89,60 @@ fieldset{
 
 .ingreso{
   display: none;
+}
+.btn{
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px black;
+  margin: 5px 0px;
+}
+
+.btn-salir , .btn-materia , .btn-horario{
+  padding: 4px;
+  margin-left: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.btn:hover{
+  background-color: black;
+  color: var(--colorSecundary);
+}
+
+.form-materia, .form-comision, .form-horario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: black 2px dotted;
+
+
+}
+
+.nueva-materia{
+  display: flex;
+  gap: 20px ;
+  align-items: center;
+}
+
+.ingreso{
+  display: flex;
+  justify-content: space-evenly;
+  
+  gap: 5px  ;
+}
+
+.datos{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  gap: 5px;
+}
+
+.nombre{
+  font-weight: 900;
+  text-decoration: underline;
+  font-size: 1em;
+
 }

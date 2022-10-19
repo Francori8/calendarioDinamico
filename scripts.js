@@ -43,9 +43,14 @@ btn_horario.addEventListener("click",conseguirIngresoDatosHorario)
 
 function conseguirIngresoDatosMateria(){
     escritura = `
-        <label>Ingresa Nueva Materia <input type="text" id="newMateria" >
-        <button id="salir">Salir</button>
-        <button id="agregarMateria">Agregar Materia</button>
+        <div class="nueva-materia">
+        <label for="newMateria">Ingresa Nueva Materia:</label>
+         <input type="text" name="newMateria" id="newMateria" >
+         </div>
+         <div>
+        <button id="salir" class="btn btn-salir">Salir</button>
+        <button id="agregarMateria" class="btn btn-materia">Agregar Materia</button>
+        </div>
     `
 
     content_ingreso.innerHTML = escritura
@@ -69,15 +74,16 @@ function conseguirIngresoDatosMateria(){
 
 function conseguirIngresoDatosHorario(){
     escritura = `
-    <div>
+    <div class="form-materia">
     <select id="materiasSelect">
         <option value="" select>Seleccione Una Materia</option>   
     </select>
     </div>
-    <div>
-        <label for="comision">Comision: <input type="text" name="comision" id="comision"></label>
+    <div class="form-comision">
+        <label for="comision">Comision: </label>
+        <input type="text" name="comision" id="comision">
     </div>
-    <div>
+    <div class="form-horario">
     <select id="dias">
         <option value="">Seleccione dia de la semana</option>
         <option value="Lunes">Lunes</option>
@@ -88,15 +94,16 @@ function conseguirIngresoDatosHorario(){
         <option value="Sabado">Sabado</option>
         <option value="Domingo">Domingo</option>
     </select>
-    <div>
+    <div >
     <label for="inicio"> Inicio <input type="time" value="08:00" name="inicio" id="inicio"></label>
     <label for="fin"> Finaliza <input type="time" value= "12:00" name="fin" id="fin"></label>
     
     </div>
     </div>
-
-    <button id="salir">Salir</button>
-    <button id="agregarHorario">Agregar Horario</button>
+    <div>
+    <button id="salir" class="btn btn-salir">Salir</button>
+    <button id="agregarHorario" class="btn btn-horario">Agregar Horario</button>
+    </div>
 `
 
    
@@ -186,9 +193,11 @@ function escribirLosDatos(){
         colorB = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*255)).join("")
         console.log(colorB,colorG,colorR)
         escritura = ` 
-        <div>
+        <div class="datos">
+            <div>
             <input type="color" id="color${mate.nombre}" class="color" value="#${colorR}${colorG}${colorB}">
-            <span>${mate.nombre}</span>
+            <span class="nombre">${mate.nombre}</span>
+            </div>
             <select id="${mate.nombre}" class="seleccionador">
                 
             </select>
@@ -242,8 +251,9 @@ function pintarEnLaGrilla(){
                     
                     while(horarioPintar != finish){
                         let divPintar =  document.getElementsByClassName(`${horarioPintar} ${horario.dia}`)
-
+                   
                         divPintar[0].style.background =`${colorSeleccionado.value}`
+                        divPintar[0].title = `${mate.nombre}`
                         horarioPintar = sumarHrs(horarioPintar, interval.value)
                         
                     }
@@ -301,6 +311,7 @@ function crearCalendario(){
     `
     content_calendary.innerHTML += escritura
    })
+   pintarEnLaGrilla()
 
 }
 
