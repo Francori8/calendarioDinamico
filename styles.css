@@ -57,17 +57,32 @@ fieldset{
 }
 
 #info-calendar{
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-#calendar{
-  margin-top: 10px;
+#ventana{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+  
+  background-color: var(--colorPrimary);
+}
+
+#calendar, #calendario-solo {
+ 
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto;
   border: 1px solid black;
   background-color:white;
+}
+
+#calendario-solo{
+  width: 100%;
+  height: 100%;
 }
 
 .firstColumn, .firstRow{
@@ -85,6 +100,9 @@ fieldset{
 
 .divCalendar{
    border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   font-weight: bold;
 }
 
 .ingreso{
@@ -103,6 +121,11 @@ fieldset{
   align-items: center;
   text-align: center;
 }
+.btn-cerrar{
+  font-size: x-small;
+  position: absolute;
+  top: -5px;
+}
 
 .btn:hover{
   background-color: black;
@@ -115,8 +138,8 @@ fieldset{
   justify-content: center;
   align-items: center;
   gap: 5px;
-  border: black 2px dotted;
-
+  border: 2px solid var(--colorSecundary);
+  padding: 5px;
 
 }
 
@@ -129,7 +152,6 @@ fieldset{
 .ingreso{
   display: flex;
   justify-content: space-evenly;
-  
   gap: 5px  ;
 }
 
@@ -145,4 +167,27 @@ fieldset{
   text-decoration: underline;
   font-size: 1em;
 
+}
+
+@media (max-width: 870px) {
+  #content-program{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #content-information{
+    margin-top: 2px;
+    width: 100%;
+    border: 1px dashed black;
+  }
+  #content-calendar{
+    width: 100%;
+  }
+  .ingreso{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   
+  }
 }
