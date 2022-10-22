@@ -22,7 +22,7 @@ section{
   color: var(--colorSecundary);
   font-weight: bold;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
 
 }
 
@@ -60,6 +60,9 @@ fieldset{
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -102,6 +105,7 @@ fieldset{
    border: 1px solid black;
    display: flex;
    justify-content: center;
+   align-items: center;
    font-weight: bold;
 }
 
@@ -125,6 +129,12 @@ fieldset{
   font-size: x-small;
   position: absolute;
   top: -5px;
+}
+
+.datos div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btn:hover{
@@ -168,6 +178,27 @@ fieldset{
   font-size: 1em;
 
 }
+#error{
+  height: max-content;
+  width: 50%;
+  margin: auto;
+  padding: auto;
+  background-color: var(--colorPrimary);
+  
+  font-weight: bold;
+}
+
+#error div{
+  padding: 5px;
+}
+
+.btn-error{
+  position: relative;
+  right:-70%;
+}
+
+
+
 
 @media (max-width: 870px) {
   #content-program{

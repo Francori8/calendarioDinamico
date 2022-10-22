@@ -26,6 +26,9 @@ const btn_materia = document.getElementById("btn-materia")
 const btn_horario = document.getElementById("btn-horario")
 const btn_agrandar = document.getElementById("agrandar")
 const ventana = document.getElementById("ventana")
+const errorPintar = document.getElementById("error")
+const textError = document.getElementById("textError")
+const btn_error = document.getElementById("cerrarError")
 const btn_cerrar = document.getElementById("cerrar")
 const content_calendarySolo = document.getElementById("calendario-solo")
 const content_information = document.getElementById("content-information")
@@ -89,7 +92,7 @@ function conseguirIngresoDatosHorario(){
     escritura = `
     <div class="form-materia">
     <select id="materiasSelect">
-        <option value="" select>Seleccione Una Materia</option>
+        
     </select>
     </div>
     <div class="form-comision">
@@ -123,7 +126,9 @@ function conseguirIngresoDatosHorario(){
     content_ingreso.innerHTML = escritura
     content_ingreso.style.display = "flex"
     let materiasSelect = document.getElementById("materiasSelect")
-
+    materiasSelect.innerHTML =""
+    materiasSelect.innerHTML = `<option value="" select>Seleccione Una Materia</option>`
+    
     materias.forEach((m) =>{
         escritura =`<option value="${m}">${m}</option>`
         materiasSelect.innerHTML += escritura
@@ -204,16 +209,19 @@ function escribirLosDatos(){
         colorR = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*255)).join("")
         colorG = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*255)).join("")
         colorB = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*255)).join("")
-        console.log(colorB,colorG,colorR)
+        
         escritura = `
         <div class="datos">
             <div>
             <input type="color" id="color${mate.nombre}" class="color" value="#${colorR}${colorG}${colorB}">
             <span class="nombre">${mate.nombre}</span>
+            <button class="btn btn-borrar borrar${mate.nombre}">Borrar</button>
             </div>
+            
             <select id="${mate.nombre}" class="seleccionador">
 
             </select>
+            
         </div>`
 
         content_information.innerHTML += escritura
@@ -230,7 +238,24 @@ function escribirLosDatos(){
 
     })
     pintarEnLaGrilla()
+    let btn_borrar = document.querySelectorAll(".btn-borrar")
+    btn_borrar.forEach((bt) =>{
+        bt.addEventListener("click",borrrarMateria)
+    })
+}
 
+function borrrarMateria(e){
+    
+    let claseMateriaBorrar = e.target.classList.value
+    
+    let materiaBorrar = claseMateriaBorrar.replace("btn btn-borrar borrar","")
+    
+    todasMaterias = todasMaterias.filter((mat)=> mat.nombre != materiaBorrar)
+    console.log(materias)
+    materias = materias.filter((mat)=> mat != materiaBorrar)
+    console.log(materias)
+    conseguirIngresoDatosHorario()
+    escribirLosDatos()
 }
 
 function pintarEnLaGrilla(){
@@ -261,18 +286,35 @@ function pintarEnLaGrilla(){
 
                     let horarioPintar = horario.inicio
                     let finish = horario.final
-
+                    let repintadas = 0
                     while(horarioPintar != finish){
                         let divPintar =  document.getElementsByClassName(`${horarioPintar} ${horario.dia}`)
                         
 
                         Array.from(divPintar).forEach((pinta)=>{
+                            if(pinta.style.background == "white"){
                             pinta.style.background =`${colorSeleccionado.value}`
                             pinta.title = `${mate.nombre}`
+                            }else{
+                                pinta.style.background =`${colorSeleccionado.value}`
+                                pinta.title = `${mate.nombre}`
+                                repintadas++
+                                
+                            }
                           
                         })
                         
                         horarioPintar = sumarHrs(horarioPintar, interval.value)
+
+                    }
+                    if(repintadas != 0){
+                        textError.innerHTML = `La franja horario de la comision <em>${comi.id}</em> de la materia <em>${mate.nombre}</em>, ya estaba pintada anteriormente, se sobrepintara la misma, en caso de no desearlo cambie la seleccion de comision`
+                        errorPintar.showModal()
+                        btn_error.addEventListener("click",() =>{
+                            errorPintar.close()
+                        })
+                        console.log(comi.id)
+                        console.log(mate.nombre)
 
                     }
 
