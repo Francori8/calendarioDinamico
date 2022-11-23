@@ -75,6 +75,7 @@ fieldset{
   background-color: var(--colorPrimary);
 }
 
+
 #calendar, #calendario-solo {
  
   display: grid;
@@ -131,6 +132,10 @@ fieldset{
   top: -5px;
 }
 
+.btn-prueba{
+  font-size: x-small;
+  margin-left: 5px;
+}
 .datos div{
   display: flex;
   justify-content: space-between;

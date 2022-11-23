@@ -1,4 +1,5 @@
 
+
 class Materias{
     constructor(nombre){
         this.nombre = nombre
@@ -41,6 +42,8 @@ let materias = []
 let todasMaterias = []
 const content_calendary = document.getElementById("calendar")
 const content_ingreso = document.getElementById("ingreso")
+
+
 
 interval.addEventListener("change",crearCalendario)
 init_hours.addEventListener("change",crearCalendario)
@@ -119,6 +122,7 @@ function conseguirIngresoDatosHorario(){
     <div>
     <button id="salir" class="btn btn-salir">Salir</button>
     <button id="agregarHorario" class="btn btn-horario">Agregar Horario</button>
+    <button id="prueba" class="btn btn-prueba" title="Ejemplo de Prueba">📝</button>
     </div>
 `
 
@@ -140,6 +144,11 @@ function conseguirIngresoDatosHorario(){
     })
     let agregarDatos = document.getElementById("agregarHorario")
     agregarDatos.addEventListener("click", almacenarTodosLosDatos)
+
+    document.getElementById("prueba").addEventListener("click",() =>{
+        todasMaterias = licenciaturaUnq
+        almacenarTodosLosDatos()
+    })
 
 }
 
@@ -206,9 +215,9 @@ function escribirLosDatos(){
     let colorB
     let selectComision
     todasMaterias.forEach((mate) => {
-        colorR = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*255)).join("")
-        colorG = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*255)).join("")
-        colorB = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*255)).join("")
+        colorR = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*(255-16) +16)).join("")
+        colorG = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*(255-16)+16)).join("")
+        colorB = transformarNumeroDecimalAHexadecimal(Math.floor(Math.random()*(255-16) +16)).join("")
         
         escritura = `
         <div class="datos">
@@ -251,9 +260,9 @@ function borrrarMateria(e){
     let materiaBorrar = claseMateriaBorrar.replace("btn btn-borrar borrar","")
     
     todasMaterias = todasMaterias.filter((mat)=> mat.nombre != materiaBorrar)
-    console.log(materias)
+    
     materias = materias.filter((mat)=> mat != materiaBorrar)
-    console.log(materias)
+    
     conseguirIngresoDatosHorario()
     escribirLosDatos()
 }
@@ -287,7 +296,7 @@ function pintarEnLaGrilla(){
                     let horarioPintar = horario.inicio
                     let finish = horario.final
                     let repintadas = 0
-                    while(horarioPintar != finish){
+                    while(horarioPintar < finish){ // cambiar la condicion del while, porque genera posibilidades de bucle infinito
                         let divPintar =  document.getElementsByClassName(`${horarioPintar} ${horario.dia}`)
                         
 
@@ -313,8 +322,6 @@ function pintarEnLaGrilla(){
                         btn_error.addEventListener("click",() =>{
                             errorPintar.close()
                         })
-                        console.log(comi.id)
-                        console.log(mate.nombre)
 
                     }
 
@@ -326,10 +333,10 @@ function pintarEnLaGrilla(){
 
     })
 
-
+    console.log(todasMaterias)
 }
 
-function sumarHrs(horas, adicion ){
+function sumarHrs(horas, adicion){
     let hrs = parseInt(horas.split(":")[0])
     let min = parseInt(horas.split(":")[1])
     let suma = parseInt(adicion)
