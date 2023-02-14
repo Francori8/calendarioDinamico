@@ -84,6 +84,7 @@ function conseguirIngresoDatosMateria(){
         if( !materias.includes(newMateria.value) && newMateria.value != ""){
             materias.push(newMateria.value)
            todasMaterias.push(new Materias(newMateria.value))
+           newMateria.value = ""
 
         }
 
@@ -333,7 +334,7 @@ function pintarEnLaGrilla(){
 
     })
 
-    console.log(todasMaterias)
+   
 }
 
 function sumarHrs(horas, adicion){

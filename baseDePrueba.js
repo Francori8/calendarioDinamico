@@ -351,13 +351,19 @@ let licenciaturaUnq = [
                             inicio : "18:00",
                             final : "20:00"
 
-                        },
-                        {
-                            dia : "Martes",
-                            inicio : "18:00",
-                            final : "20:00"
                         }
+                    
                     ]
+                },
+                {
+                        id:2,
+                        horarios :[
+                            {
+                                dia : "Martes",
+                                inicio : "18:00",
+                                final : "20:00"
+                            }
+                        ]
                 }
             ]
     }
