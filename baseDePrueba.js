@@ -73,8 +73,8 @@ let licenciaturaUnq = [
                     },
                     {
                         dia : "Viernes",
-                        inicio : "12:00",
-                        final : "15:00"
+                        inicio : "12:30",
+                        final : "15:30"
                     }
                 ]
             },
@@ -83,8 +83,8 @@ let licenciaturaUnq = [
                 horarios : [
                     {
                         dia : "Martes",
-                        inicio : "08:00",
-                        final : "11:00"
+                        inicio : "09:00",
+                        final : "12:00"
                     },
                     {
                         dia : "Sabado",
@@ -119,13 +119,13 @@ let licenciaturaUnq = [
                 horarios : [
                     {
                         dia:"Miercoles",
-                        inicio : "09:30",
-                        final : "12:30"
+                        inicio : "09:00",
+                        final : "12:00"
                     },
                     {
                         dia: "Lunes",
-                        inicio : "10:00",
-                        final : "13:00"
+                        inicio : "12:00",
+                        final : "15:00"
                     }
                 ]
             },
@@ -134,8 +134,8 @@ let licenciaturaUnq = [
                 horarios : [
                     {
                         dia : "Miercoles",
-                        inicio : "09:30",
-                        final : "12:30"
+                        inicio : "09:00",
+                        final : "12:00"
                     },
                     {
                         dia : "Sabado",
@@ -176,52 +176,88 @@ let licenciaturaUnq = [
             }
         ]
     },
+    
     {
-        nombre : "Estructura de Datos",
-        comision : [
+        nombre :"Estructura de Datos",
+        comision :[
             {
-                id : 1,
-                horarios : [
-                    {
-                        dia: "Martes",
-                        inicio : "16:00",
-                        final : "22:00",
-                    },
-                    {
-                        dia: "Jueves",
-                        inicio : "16:00",
-                        final : "18:00"
-                    }
-                ]
+                id: 1,
+                horarios:[{
+                    dia:"Martes",
+                    inicio:"16:00",
+                    final:"17:59",
+                },
+                {
+                    dia:"Jueves",
+                    inicio:"16:00",
+                    final:"17:59",
+                },
+                {
+                    dia:"Martes",
+                    inicio:"18:00",
+                    final:"21:59"
+                }
+             
+                   
+            ]},
+            {
+             id: 2,
+                horarios:[{
+                    dia:"Martes",
+                    inicio:"18:00",
+                    final:"19:59",
+                },
+                {
+                    dia:"Jueves",
+                    inicio:"18:00",
+                    final:"19:59",
+                },
+                {
+                    dia:"Martes",
+                    inicio:"14:00",
+                    final:"17:59",
+                }
+                   
+            ]},
+            {
+             id: 3,
+                horarios:[{
+                    dia:"Martes",
+                    inicio:"18:00",
+                    final:"19:59",
+                },
+                {
+                    dia:"Jueves",
+                    inicio:"18:00",
+                    final:"19:59",
+                },
+                {
+                    dia:"Martes",
+                    inicio:"14:00",
+                    final:"17:59",
+                }
+                   
+            ]
+
             },
             {
-                id: 2,
-                horarios : [
-                    {
-                        dia: "Martes",
-                        inicio: "14:00",
-                        final : "20:00"
-                    },
-                    {
-                        dia: "Jueves",
-                        inicio: "18:00",
-                        final : "20:00",
-                    }
-                ]
-            },
-            {
-                id: 3,
-                horarios : [
-                    {
-                        dia: "Martes",
-                        inicio : "14:00",
-                        final : "20:00"
-                    },
-                    {
-                        dia:"Jueves",
-                        inicio: "18:00",
-                        final : "20:00"
-                    }
+                id:4,
+                horarios:[{
+                    dia:"Martes",
+                    inicio:"16:00",
+                    final:"17:59"
+
+                },
+                {
+                    dia:"Jueves",
+                    inicio:"16:00",
+                    final:"17:59"
+                },
+                {
+                    dia:"Martes",
+                    inicio:"18:00",
+                    final:"21:59"
+                }
                 ]
             }
         ]
@@ -283,9 +319,14 @@ let licenciaturaUnq = [
                 id: 2,
                 horarios: [
                     {
-                        dia: "Jueves",
+                        dia: "Martes",
                         inicio: "18:00",
-                        final: "22:00"
+                        final: "19:59"
+                    },
+                    {
+                        dia:"Viernes",
+                        inicio:"18:00",
+                        final:"19:59"
                     }
                 ]
             }
@@ -298,74 +339,16 @@ let licenciaturaUnq = [
             {
                 id: 1,
                 horarios: [
-                    {
-                        dia: "Lunes",
-                        inicio : "17:00",
-                        final: "20:00"
-
-                    },
+                  
                     {
                         dia: "Miercoles",
-                        inicio: "17:00",
+                        inicio: "16:00",
                         final: "20:00"
                     }
                 ]
             }
         ]
     },
-    {
-            nombre : "TTU",
-            comision : [
-                {
-                    id : 1,
-                    horarios :[
-                        {
-                            dia : "Lunes",
-                            inicio : "16:00",
-                            final : "18:00"
-                        }
-                    ]
-                },
-                {
-                    id : 2,
-                    horarios :[
-                        {
-                            dia : "Jueves",
-                            inicio : "18:00",
-                            final : "20:00"
-
-                        }
-                    ]
-                }
-
-            ]
-    },
-    {
-            nombre : "TTI",
-            comision : [
-                {
-                    id : 1,
-                    horarios : [
-                        {
-                            dia : "Jueves",
-                            inicio : "18:00",
-                            final : "20:00"
-
-                        }
-                    
-                    ]
-                },
-                {
-                        id:2,
-                        horarios :[
-                            {
-                                dia : "Martes",
-                                inicio : "18:00",
-                                final : "20:00"
-                            }
-                        ]
-                }
-            ]
-    }
+   
 
 ]
