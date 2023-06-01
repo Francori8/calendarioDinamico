@@ -342,13 +342,123 @@ let licenciaturaUnq = [
                   
                     {
                         dia: "Miercoles",
-                        inicio: "16:00",
-                        final: "20:00"
+                        inicio: "17:00",
+                        final: "21:00"
                     }
                 ]
             }
         ]
     },
+    {
+        nombre: "Programacion Funcional",
+        comision: [
+            {
+                    id: 1,
+                    horarios: [
+                        {
+                            dia: "Martes",
+                            inicio: "18:00",
+                            final : "20:00"
+                        },
+                        {
+                            dia:"Jueves",
+                            inicio:"18:00",
+                            final:"20:00"
+                        }
+                    ]
+            }
+        ]
+
+    },
+    {
+        nombre: "Programacion Concurrente",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Martes",
+                        inicio:"16:00",
+                        final:"20:00"
+
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        nombre:"Redes de Computadoras",
+        comision:[
+            {
+                id:1,
+                horarios:[
+                    {
+                        dia:"Martes",
+                        inicio:"09:00" ,
+                        final:"11:00"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"08:00",
+                        final:"12:00"
+                    }
+                ]
+            },
+            {
+                id:2,
+                horarios:[
+                    {
+                        dia:"Martes",
+                        inicio:"18:00",
+                        final:"20:00"
+                    },
+                    {   
+                        dia:"Jueves",
+                        inicio:"18:00",
+                        final:"22:00",
+                    }
+                ]
+            },
+            {
+                id:3,
+                horarios:[
+                    {
+                        dia:"Martes",
+                        inicio:"20:00",
+                        final:"22:00"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"18:00",
+                        final:"22:00"
+                    }
+
+                ]
+            }
+        ]
+    },
+    {
+        nombre:"Sistema Operativos",
+        comision:[
+            {   
+                id:1,
+                horarios:[
+                    {
+                        dia:"Lunes",
+                        inicio:"19:00",
+                        final:"22:00"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"19:00",
+                        final:"22:00"
+                    }
+                ]
+
+            }
+        ]
+    }
    
 
 ]

@@ -82,7 +82,7 @@ fieldset{
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto;
   border: 1px solid black;
-  background-color:white;
+  background-color:var(--colorSecundary);
 }
 
 #calendario-solo{
@@ -101,7 +101,9 @@ fieldset{
 }
 .firstColumn{
   padding: 2px 0px;
+
 }
+
 
 .divCalendar{
    border: 1px solid black;
@@ -130,7 +132,7 @@ fieldset{
 .btn-cerrar{
   font-size: x-small;
   position: absolute;
-  top: -5px;
+  top: -15px;
 }
 
 .btn-prueba{

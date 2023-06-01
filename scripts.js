@@ -17,7 +17,7 @@ class Materias{
 }
 
 
-const dayOfWeek =[["°","Calendario"], ["Lu","Lunes"],["Ma","Martes"],["Mie","Miercoles"],["Ju","Jueves"],["Vi","Viernes"],["Sa","Sabado"],["Do","Domingo"]]
+const dayOfWeek =[["","Calendario"], ["Lu","Lunes"],["Ma","Martes"],["Mie","Miercoles"],["Ju","Jueves"],["Vi","Viernes"],["Sa","Sabado"],["Do","Domingo"]]
 
 
 const interval = document.getElementById("interval")
