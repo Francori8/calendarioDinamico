@@ -112,6 +112,249 @@ let licenciaturaUnq = [
         ]
     },
     {
+        nombre:"Introduccion a la Programacion",
+        comision:[
+            {
+                id : 1,
+                horarios : [
+                    {
+                        dia : "Lunes",
+                        inicio : "09:00",
+                        final : "12:00"
+                    },
+                    {
+                        dia : "Miercoles",
+                        inicio : "09:00",
+                        final : "11:00"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"09:00",
+                        final:"12:00"
+                    }
+    
+                ]
+            },
+            {
+                id : 2,
+                horarios : [
+                    {
+                        dia : "Lunes",
+                        inicio : "12:00",
+                        final : "15:00"
+                    },
+                    {
+                        dia : "Miercoles",
+                        inicio : "09:00",
+                        final : "11:00",
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"12:00",
+                        final:"15:00"
+                    }
+                ]
+            },
+            {
+                id : 3,
+                horarios : [
+                    {
+                        dia : "Lunes",
+                        inicio : "16:00",
+                        final : "19:00"
+                    },
+                    {
+                        dia : "Miercoles",
+                        inicio : "19:00",
+                        final : "21:00"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"16:00",
+                        final:"19:00"
+                    }
+                ]
+            },
+            {
+                id : 4, 
+                horarios : [
+                    {
+                        dia : "Lunes",
+                        inicio : "19:00",
+                        final : "22:00"
+                    },
+                    {
+                        dia : "Miercoles",
+                        inicio : "19:00",
+                        final : "21:00"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"19:00",
+                        final:"22:00"
+                    }
+                ]
+            },
+            {
+                id:5,
+                horarios : [
+                    {
+                        dia: "Lunes",
+                        inicio : "16:00",
+                        final : "19:00"
+                    },
+                    {
+                        dia : "Miercoles",
+                        inicio : "18:00",
+                        final : "20:00"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"16:00",
+                        final:"19:00"
+                    }
+                ]
+            },
+            {
+                id: 6,
+                horarios : [
+                    {
+                        dia : "Lunes",
+                        inicio : "19:00",
+                        final : "22:00"
+                    },
+                    {
+                        dia : "Miercoles",
+                        inicio : "19:00",
+                        final : "21:00"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"19:00",
+                        final:"22:00"
+                    }
+                ]
+             },
+             {
+                id: 7,
+                horarios : [
+                    {
+                        dia : "Lunes",
+                        inicio : "19:00",
+                        final : "22:00"
+                    },
+                    {
+                        dia : "Miercoles",
+                        inicio : "09:00",
+                        final : "11:00"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"19:00",
+                        final:"22:00"
+                    }
+                ]
+             }
+
+
+        ]
+    },
+    {
+        nombre: "Matematica 1",
+        comision:[ {
+            id : 1,
+            horarios : [
+                {
+                    dia : "Martes",
+                    inicio : "09:00",
+                    final : "13:00"
+                },
+                {
+                    dia : "Jueves",
+                    inicio : "09:00",
+                    final : "13:00"
+                }
+
+            ]
+        },
+        {
+            id : 2,
+            horarios : [
+                {
+                    dia : "Lunes",
+                    inicio : "18:00",
+                    final : "22:00"
+                },
+                {
+                    dia : "Miercoles",
+                    inicio : "18:00",
+                    final : "22:00",
+                }
+            ]
+        },
+        {
+            id : 3,
+            horarios : [
+                {
+                    dia : "Lunes",
+                    inicio : "09:00",
+                    final : "13:00"
+                },
+                {
+                    dia : "Miercoles",
+                    inicio : "09:00",
+                    final : "13:00"
+                }
+            ]
+        },
+        {
+            id : 4, 
+            horarios : [
+                {
+                    dia : "Martes",
+                    inicio : "08:00",
+                    final : "12:00"
+                },
+                {
+                    dia : "Viernes",
+                    inicio : "08:00",
+                    final : "12:00"
+                }
+            ]
+        },
+        {
+            id:5,
+            horarios : [
+                {
+                    dia: "Miercoles",
+                    inicio : "18:00",
+                    final : "22:00"
+                },
+                {
+                    dia : "Viernes",
+                    inicio : "18:00",
+                    final : "22:00"
+                }
+            ]
+        },
+        {
+            id: 6,
+            horarios : [
+                {
+                    dia : "Martes",
+                    inicio : "13:00",
+                    final : "17:00"
+                },
+                {
+                    dia : "Viernes",
+                    inicio : "13:00",
+                    final : "17:00"
+                }
+            ]
+         }
+        ]
+    },
+    {
         nombre : "Base de Datos",
         comision : [
             {
@@ -119,13 +362,13 @@ let licenciaturaUnq = [
                 horarios : [
                     {
                         dia:"Miercoles",
-                        inicio : "09:00",
-                        final : "12:00"
+                        inicio : "18:00",
+                        final : "21:00"
                     },
                     {
-                        dia: "Lunes",
-                        inicio : "12:00",
-                        final : "15:00"
+                        dia: "Jueves",
+                        inicio : "15:00",
+                        final : "18:00"
                     }
                 ]
             },
@@ -133,9 +376,9 @@ let licenciaturaUnq = [
                 id: 2,
                 horarios : [
                     {
-                        dia : "Miercoles",
-                        inicio : "09:00",
-                        final : "12:00"
+                        dia:"Miercoles",
+                        inicio : "18:00",
+                        final : "21:00"
                     },
                     {
                         dia : "Sabado",
@@ -298,6 +541,42 @@ let licenciaturaUnq = [
         ]
     },
     {
+        nombre: "Programacion con Objetos 2",
+        comision:[
+            {
+                id:1,
+                horarios:[
+                    {
+                        dia:"Lunes",
+                        inicio:"18:00",
+                        final:"21:00",
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"15:00",
+                        final:"18:00"
+                    }
+                ]
+            },
+            {
+                id:2,
+                horarios:[
+                    {
+                        dia:"Lunes",
+                        inicio:"18:00",
+                        final:"21:00",
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"18:00",
+                        final:"21:00"
+                    }
+                ]
+            }
+
+        ]
+    },
+    {
         nombre : "Matematica 2",
         comision : [
             {
@@ -378,8 +657,8 @@ let licenciaturaUnq = [
                 horarios: [
                     {
                         dia:"Martes",
-                        inicio:"16:00",
-                        final:"20:00"
+                        inicio:"18:00",
+                        final:"22:00"
 
                     }
                 ]
@@ -450,12 +729,37 @@ let licenciaturaUnq = [
                         final:"22:00"
                     },
                     {
-                        dia:"Jueves",
+                        dia:"Miercoles",
                         inicio:"19:00",
                         final:"22:00"
                     }
                 ]
 
+            }
+        ]
+    },
+    {
+        nombre: "Ingles 2",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Lunes",
+                        inicio:"09:00",
+                        final:"12:00"
+                    }
+                ]
+            },
+            {
+                id:2,
+                horarios: [
+                    {
+                        dia:"Miercoles",
+                        inicio:"10:00",
+                        final:"13:00"
+                    }
+                ]
             }
         ]
     }
