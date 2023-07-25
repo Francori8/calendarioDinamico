@@ -362,8 +362,8 @@ let licenciaturaUnq = [
                 horarios : [
                     {
                         dia:"Miercoles",
-                        inicio : "18:00",
-                        final : "21:00"
+                        inicio : "10:00",
+                        final : "13:00"
                     },
                     {
                         dia: "Jueves",
@@ -377,8 +377,8 @@ let licenciaturaUnq = [
                 horarios : [
                     {
                         dia:"Miercoles",
-                        inicio : "18:00",
-                        final : "21:00"
+                        inicio : "10:00",
+                        final : "13:00"
                     },
                     {
                         dia : "Sabado",
