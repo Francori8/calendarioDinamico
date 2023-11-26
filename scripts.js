@@ -124,6 +124,7 @@ function conseguirIngresoDatosHorario(){
     <button id="salir" class="btn btn-salir">Salir</button>
     <button id="agregarHorario" class="btn btn-horario">Agregar Horario</button>
     <button id="prueba" class="btn btn-prueba" title="Ejemplo de Prueba">📝</button>
+
     </div>
 `
 
@@ -147,10 +148,10 @@ function conseguirIngresoDatosHorario(){
     agregarDatos.addEventListener("click", almacenarTodosLosDatos)
 
     document.getElementById("prueba").addEventListener("click",() =>{
-        todasMaterias = licenciaturaUnq
+        todasMaterias = todasMaterias.concat(licenciaturaUnq)
         almacenarTodosLosDatos()
     })
-
+   
 }
 
 function almacenarTodosLosDatos(){
@@ -471,5 +472,5 @@ function transformarNumeroDecimalAHexadecimal(numero){
 }
 
 
-window.addEventListener(onload,crearCalendario())
+window.addEventListener("load",crearCalendario)
 

@@ -416,6 +416,12 @@ let licenciaturaUnq = [
                         final : "13:00",
                     }
                 ]
+            },
+            {
+                id : 5+ " (asincronico)" ,
+                horarios : [
+                    
+                ]
             }
         ]
     },
@@ -738,6 +744,23 @@ let licenciaturaUnq = [
             }
         ]
     },
+    {
+        nombre : "Laboratorio de Sistemas y Redes",
+        comision:[
+            {
+                id:1,
+                horarios :[
+                    {
+                        dia:"Jueves",
+                        inicio:"09:00",
+                        final:"13:00"
+                    }
+                ]
+            }
+        ]
+    }
+    ,
+
     {
         nombre: "Ingles 2",
         comision: [
