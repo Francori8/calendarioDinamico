@@ -73,8 +73,8 @@ let licenciaturaUnq = [
                     },
                     {
                         dia : "Viernes",
-                        inicio : "12:30",
-                        final : "15:30"
+                        inicio : "13:00",
+                        final : "16:00"
                     }
                 ]
             },
@@ -87,7 +87,7 @@ let licenciaturaUnq = [
                         final : "12:00"
                     },
                     {
-                        dia : "Sabado",
+                        dia : "Viernes",
                         inicio : "09:00",
                         final : "12:00"
                     }
@@ -165,8 +165,8 @@ let licenciaturaUnq = [
                     },
                     {
                         dia : "Miercoles",
-                        inicio : "19:00",
-                        final : "21:00"
+                        inicio : "18:00",
+                        final : "20:00"
                     },
                     {
                         dia:"Jueves",
@@ -185,8 +185,8 @@ let licenciaturaUnq = [
                     },
                     {
                         dia : "Miercoles",
-                        inicio : "19:00",
-                        final : "21:00"
+                        inicio : "18:00",
+                        final : "20:00"
                     },
                     {
                         dia:"Jueves",
@@ -225,8 +225,8 @@ let licenciaturaUnq = [
                     },
                     {
                         dia : "Miercoles",
-                        inicio : "19:00",
-                        final : "21:00"
+                        inicio : "18:00",
+                        final : "20:00"
                     },
                     {
                         dia:"Jueves",
@@ -361,14 +361,14 @@ let licenciaturaUnq = [
                 id: 1 ,
                 horarios : [
                     {
-                        dia:"Miercoles",
-                        inicio : "10:00",
-                        final : "13:00"
-                    },
-                    {
-                        dia: "Jueves",
+                        dia:"Martes",
                         inicio : "15:00",
                         final : "18:00"
+                    },
+                    {
+                        dia: "Viernes",
+                        inicio : "18:00",
+                        final : "21:00"
                     }
                 ]
             },
@@ -376,9 +376,9 @@ let licenciaturaUnq = [
                 id: 2,
                 horarios : [
                     {
-                        dia:"Miercoles",
-                        inicio : "10:00",
-                        final : "13:00"
+                        dia: "Viernes",
+                        inicio : "18:00",
+                        final : "21:00"
                     },
                     {
                         dia : "Sabado",
@@ -391,7 +391,7 @@ let licenciaturaUnq = [
                 id:3,
                 horarios : [
                     {
-                        dia: "Miercoles",
+                        dia: "Viernes",
                         inicio : "18:00",
                         final : "21:00"
                     },
@@ -406,7 +406,7 @@ let licenciaturaUnq = [
                 id : 4 ,
                 horarios : [
                     {
-                        dia : "Miercoles",
+                        dia: "Viernes",
                         inicio : "18:00",
                         final : "21:00"
                     },
@@ -416,13 +416,8 @@ let licenciaturaUnq = [
                         final : "13:00",
                     }
                 ]
-            },
-            {
-                id : 5+ " (asincronico)" ,
-                horarios : [
-                    
-                ]
             }
+            
         ]
     },
     
@@ -538,7 +533,7 @@ let licenciaturaUnq = [
                         final : "22:00"
                     },
                     {
-                        dia : "Viernes",
+                        dia : "Lunes",
                         inicio: "18:00",
                         final : "22:00"
                     }
@@ -618,22 +613,7 @@ let licenciaturaUnq = [
 
         ]
     },
-    {
-        nombre: "Logica y Programacion",
-        comision: [
-            {
-                id: 1,
-                horarios: [
-                  
-                    {
-                        dia: "Miercoles",
-                        inicio: "17:00",
-                        final: "21:00"
-                    }
-                ]
-            }
-        ]
-    },
+    
     {
         nombre: "Programacion Funcional",
         comision: [
@@ -662,9 +642,9 @@ let licenciaturaUnq = [
                 id:1,
                 horarios: [
                     {
-                        dia:"Martes",
-                        inicio:"18:00",
-                        final:"22:00"
+                        dia:"Sabado",
+                        inicio:"09:00",
+                        final:"13:00"
 
                     }
                 ]
@@ -741,6 +721,22 @@ let licenciaturaUnq = [
                     }
                 ]
 
+            },
+            {   
+                id:2,
+                horarios:[
+                    {
+                        dia:"Lunes",
+                        inicio:"19:00",
+                        final:"22:00"
+                    },
+                    {
+                        dia:"Miercoles",
+                        inicio:"19:00",
+                        final:"22:00"
+                    }
+                ]
+
             }
         ]
     },
@@ -752,8 +748,8 @@ let licenciaturaUnq = [
                 horarios :[
                     {
                         dia:"Jueves",
-                        inicio:"09:00",
-                        final:"13:00"
+                        inicio:"14:00",
+                        final:"18:00"
                     }
                 ]
             }
@@ -783,6 +779,239 @@ let licenciaturaUnq = [
                         final:"13:00"
                     }
                 ]
+            }
+        ]
+    },
+    {
+        nombre: "Construccion de Interefaces de Usuario",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Miercoles",
+                        inicio:"18:30",
+                        final:"20:59"
+                    },
+                    {
+                        dia:"Jueves",
+                        inicio:"18:30",
+                        final:"21:59"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        nombre: "Estrategias de Persistencia",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Viernes",
+                        inicio:"16:00",
+                        final:"22:00"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        nombre: "Elementos de Ingenieria de Software",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Lunes",
+                        inicio:"19:00",
+                        final:"21:59"
+                    },
+                    {
+                        dia:"Miercoles",
+                        inicio:"19:00",
+                        final:"21:59"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        nombre: "Analisis Matematico 1",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Lunes",
+                        inicio:"08:00",
+                        final:"10:00"
+                    },
+                    {
+                        dia:"Miercoles",
+                        inicio:"08:00",
+                        final:"12:00"
+                    }
+                ]
+
+            },
+            {
+                id:2,
+                horarios: [
+                    {
+                        dia:"Lunes",
+                        inicio:"08:00",
+                        final:"10:00"
+                    },
+                    {
+                        dia:"Miercoles",
+                        inicio:"08:00",
+                        final:"12:00"
+                    }
+                ]
+
+            },
+            {
+                id:3,
+                horarios: [
+                    {
+                        dia:"Martes",
+                        inicio:"10:00",
+                        final:"12:00"
+                    },
+                    {
+                        dia:"Viernes",
+                        inicio:"08:00",
+                        final:"12:00"
+                    }
+                ]
+
+            },
+            {
+                id:4,
+                horarios: [
+                    {
+                        dia:"Lunes",
+                        inicio:"14:00",
+                        final:"18:00"
+                    },
+                    {
+                        dia:"Miercoles",
+                        inicio:"16:00",
+                        final:"18:00"
+                    }
+                ]
+
+            },
+            {
+                id:5,
+                horarios: [
+                    {
+                        dia:"Lunes",
+                        inicio:"14:00",
+                        final:"18:00"
+                    },
+                    {
+                        dia:"Miercoles",
+                        inicio:"14:00",
+                        final:"16:00"
+                    }
+                ]
+
+            },
+            {
+                id:6,
+                horarios: [
+                    {
+                        dia:"Lunes",
+                        inicio:"18:00",
+                        final:"20:00"
+                    },
+                    {
+                        dia:"Miercoles",
+                        inicio:"18:00",
+                        final:"22:00"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        nombre: "Lenguajes Formales y Automatas",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Lunes",
+                        inicio:"19:00",
+                        final:"20:59"
+                    },
+                    {
+                        dia:"Miercoles",
+                        inicio:"18:30",
+                        final:"20:30"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        nombre: "Programacion Orientada a Objetos 3",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Martes",
+                        inicio:"18:00",
+                        final:"21:59"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        nombre: "Desarrollo de Aplicaciones",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Martes",
+                        inicio:"19:00",
+                        final:"21:59"
+                    },
+                    {
+                        dia:"Miercoles",
+                        inicio:"18:00",
+                        final:"20:59"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        nombre: "Seguridad de la Informacion",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Sabado",
+                        inicio:"09:00",
+                        final:"12:59"
+                    }
+                ]
+
             }
         ]
     }
