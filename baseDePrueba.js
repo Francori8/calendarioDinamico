@@ -73,8 +73,8 @@ let licenciaturaUnq = [
                     },
                     {
                         dia : "Viernes",
-                        inicio : "13:00",
-                        final : "16:00"
+                        inicio : "12:30",
+                        final : "15:30"
                     }
                 ]
             },
@@ -361,14 +361,14 @@ let licenciaturaUnq = [
                 id: 1 ,
                 horarios : [
                     {
-                        dia:"Martes",
+                        dia:"Miercoles",
                         inicio : "15:00",
                         final : "18:00"
                     },
                     {
-                        dia: "Viernes",
-                        inicio : "18:00",
-                        final : "21:00"
+                        dia: "Jueves",
+                        inicio : "09:00",
+                        final : "12:00"
                     }
                 ]
             },
@@ -376,14 +376,14 @@ let licenciaturaUnq = [
                 id: 2,
                 horarios : [
                     {
-                        dia: "Viernes",
-                        inicio : "18:00",
-                        final : "21:00"
+                        dia: "Miercoles",
+                        inicio : "15:00",
+                        final : "18:00"
                     },
                     {
-                        dia : "Sabado",
-                        inicio : "10:00",
-                        final : "13:00"
+                        dia : "Jueves",
+                        inicio : "09:00",
+                        final : "12:00"
                     }
                 ]
             },
@@ -533,7 +533,7 @@ let licenciaturaUnq = [
                         final : "22:00"
                     },
                     {
-                        dia : "Lunes",
+                        dia : "Viernes",
                         inicio: "18:00",
                         final : "22:00"
                     }
@@ -748,8 +748,8 @@ let licenciaturaUnq = [
                 horarios :[
                     {
                         dia:"Jueves",
-                        inicio:"14:00",
-                        final:"18:00"
+                        inicio:"18:00",
+                        final:"22:00"
                     }
                 ]
             }
@@ -896,12 +896,12 @@ let licenciaturaUnq = [
                 horarios: [
                     {
                         dia:"Lunes",
-                        inicio:"14:00",
+                        inicio:"16:00",
                         final:"18:00"
                     },
                     {
                         dia:"Miercoles",
-                        inicio:"16:00",
+                        inicio:"12:00",
                         final:"18:00"
                     }
                 ]
@@ -936,6 +936,23 @@ let licenciaturaUnq = [
                         inicio:"18:00",
                         final:"22:00"
                     }
+                ]
+
+            }
+        ]
+    },
+    {
+        nombre: "Logica y Programacion",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Miercoles",
+                        inicio:"17:00",
+                        final:"20:59"
+                    }
+                  
                 ]
 
             }
@@ -993,6 +1010,22 @@ let licenciaturaUnq = [
                         dia:"Miercoles",
                         inicio:"18:00",
                         final:"20:59"
+                    }
+                ]
+
+            }
+        ]
+    },
+    {
+        nombre: "Introuccion al desarrollo de Videojuegos",
+        comision: [
+            {
+                id:1,
+                horarios: [
+                    {
+                        dia:"Viernes",
+                        inicio:"18:00",
+                        final:"21:59"
                     }
                 ]
 
