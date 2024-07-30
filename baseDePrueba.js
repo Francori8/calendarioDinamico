@@ -67,14 +67,14 @@ let licenciaturaUnq = [
                 id:5,
                 horarios : [
                     {
-                        dia: "Miercoles",
+                        dia: "Martes",
                         inicio : "09:00",
                         final : "12:00"
                     },
                     {
                         dia : "Viernes",
-                        inicio : "12:30",
-                        final : "15:30"
+                        inicio : "13:00",
+                        final : "16:00"
                     }
                 ]
             },
@@ -432,7 +432,7 @@ let licenciaturaUnq = [
                     final:"17:59",
                 },
                 {
-                    dia:"Jueves",
+                    dia:"Viernes",
                     inicio:"16:00",
                     final:"17:59",
                 },
@@ -452,7 +452,7 @@ let licenciaturaUnq = [
                     final:"19:59",
                 },
                 {
-                    dia:"Jueves",
+                    dia:"Viernes",
                     inicio:"18:00",
                     final:"19:59",
                 },
